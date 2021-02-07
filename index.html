@@ -7,10 +7,22 @@
 </head>
 <body>
     <h1>Title</h1>
-    <p>text</p>
+    <img src="play.png" id="play">
+    <br>
+    <img src="pause.png" id="pause">
     <script>
         var text = "Click to load"
-        // alert(text)
+        var play = document.getElementById("play")
+        var pause = document.getElementById("pause")
+        var audio = new Audio("audio.wav")
+        play.onclick = function(e){
+            audio.play()
+        }
+        pause.onclick = function(e){
+            audio.pause()
+        }
+
     </script>
+
 </body>
 </html>
