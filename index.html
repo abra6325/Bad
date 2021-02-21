@@ -4,12 +4,20 @@
     <title>Sample Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <h1>Title</h1>
     <img src="play.png" id="play">
-    <br>
+    <br><br/>
     <img src="pause.png" id="pause">
+    <div align="center" id="grecaptcha_Area">
+        <form action="?" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LdqlmEaAAAAAInLxhjmU3BhalF6FTgpKVFgNX8I"></div>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
     <script>
         var text = "Click to load"
         var play = document.getElementById("play")
