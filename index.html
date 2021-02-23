@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script src="script/redirect.js"></script>
-  <title>Salty Fish | Sorry</title>
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <div class="topnav">
-    <p class="toptitle">Verification Page</p>
-  </div>
-  <div style="padding-left:16px">
-    <h2>We are very sorry</h2>
-    <p>But you need to complete this verification in order to continue</p>
-  </div>
-  <div align="center" id="grecaptcha_Area">
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LdqlmEaAAAAAInLxhjmU3BhalF6FTgpKVFgNX8I"></div>
-    </form>
-  </div>
+    <h1>Title</h1>
+    <img src="play.png" id="play">
+    <br><br/>
+    <img src="pause.png" id="pause">
+    <div align="center" id="grecaptcha_Area">
+        <form action="?" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LdqlmEaAAAAAInLxhjmU3BhalF6FTgpKVFgNX8I"></div>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <script>
+        var text = "Click to load"
+        var play = document.getElementById("play")
+        var pause = document.getElementById("pause")
+        var audio = new Audio("audio.wav")
+        play.onclick = function(e){
+            audio.play()
+        }
+        pause.onclick = function(e){
+            audio.pause()
+        }
+
+    </script>
+
 </body>
 </html>
