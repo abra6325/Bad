@@ -1,0 +1,39 @@
+.titleint p {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e3e3e3
+}
+
+.tBar {
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.tBar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 23px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.tBar p.toptitle {
+  padding-left: 16px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white
+}
+
+.nav {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    background-color: #d6d6d6;
+    border-radius: 12px;
+}
