@@ -24,7 +24,7 @@
 }
 
 .cookiemsg .load {
-  /*visibility: visible;
+  visibility: visible;
   bottom: 0;
   right: 0;
   position: fixed;
@@ -32,7 +32,7 @@
   padding: 16px;
   border: solid;
   border-radius: 8px;
-  background: #e3e3e3;*/
+  background: #ffffff;
   animation: fadeIn 5s;
 }
 

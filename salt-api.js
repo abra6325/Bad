@@ -32,8 +32,7 @@ function cmessage(){
 }
 function cagree(){
     var popup = document.getElementById("cookiemsg");
-    popup.classList.toggle("load","idle");
+    popup.classList.replace("load","idle");
     cset("cookieagree",true,999999)
 }
-onLoad()
 //from https://www.w3schools.com/js/js_cookies.asp thanks a lot
