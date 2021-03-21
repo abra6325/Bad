@@ -20,7 +20,7 @@ function cget(cname){
     return "";
 }
 function onLoad(){
-    var firstvisit = cget("firstvisit")
+    var cookieagree = cget("cookieagree")
     if (!cookieagree == "true"){
         cmessage()
         cset("firstuser",1,999999)
@@ -37,7 +37,7 @@ function cagree(){
 }
 var cookieagree = cget("cookieagree")
 var firstvisit = cget("firstuser")
-if (firstvisit == "" || firstvisit == null || firstvisit == "0"){
+if (!firstvisit == "1"){
     onLoad()
 }
 //from https://www.w3schools.com/js/js_cookies.asp thanks a lot
