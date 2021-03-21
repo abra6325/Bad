@@ -1,33 +1,24 @@
 /*frames*/
 @keyframes messageIn {
-  from {opacity:0;}
-  to {opacity:1;}
+    from {opacity:0;}
+    to {opacity:1;}
 }
 
 .cookiemsg .idle {
     visibility: hidden;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    margin: 1px;
-    padding: 16px;
-    border: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    background: #e3e3e3
 }
 
 .cookiemsg .load {
-  visibility: visible;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  margin: 8px;
-  padding: 16px;
-  border: solid;
-  border-radius: 8px;
-  background: #e3e3e3;
-  animation: messageIn 2s;
+    visibility: visible;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin: 8px;
+    padding: 16px;
+    border: solid;
+    border-radius: 8px;
+    background: #e3e3e3;
+    animation: messageIn 2s;
 }
 
 .cookiemsg .load p {
