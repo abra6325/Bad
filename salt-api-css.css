@@ -34,6 +34,22 @@
     font-family: sans-serif;
 }
 
+.cookiemsg .load a {
+    color: #878787;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 36px;
+    cursor: pointer;-size: 12px;
+    font-family: sans-serif;
+}
+
+.cookiemsg .load a:hover {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
 .cookiemsg .load input[type=button] {
     cursor: pointer;
     border: double;
