@@ -1,0 +1,13 @@
+.mText {
+    padding-left: 24px;
+}
+
+.mText p.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.mText p.text {
+    font-size: 16px;
+    font-weight: normal;
+}

@@ -16,8 +16,8 @@ body {
 .tBar a {
   float: left;
   color: #f2f2f2;
+  margin-left: -8px;
   text-align: center;
-  padding: 14px 23px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -40,9 +40,13 @@ body {
     width: 50%;
 }
 
-.nav p {
+.nav p.title {
     font-size: 32px;
     font-weight: bold;
+}
+
+.nav p.chatbotText {
+    font-size: 16px;
 }
 
 .nav input.textchatbox {
@@ -52,6 +56,10 @@ body {
     padding-left: 12px;
     width: 50%;
     outline: none;
+}
+
+#history {
+    overflow-y: scroll;
 }
 
 .title {

@@ -4,15 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="bodytext.css">
+  <link rel="stylesheet" href="topbar.css">
+  <link rel="stylesheet" href="bottombar.css">
+  <script type="text/javascript" src="script/submitsearch.js"></script>
   <title>Salty Fish | <null></title>
 </head>
 <body>
 <div class="tBar">
   <a href="/"><img class="logoimage" src="logo.png"></a>
   <div class="searchBox">
-    <input type="text" placeholder="Search Salty Fish..." name="search">
-    <button type="submit" class="searchSubmitButton">Get Salt!</button>
+    <input type="text" id="searchquery" placeholder="Search Salty Fish..." name="search">
+    <input type="button" class="submit" value="Salt!" onclick="getDataToNewPageSearch()">
   </div>
 </div>
 <div class="mText">
