@@ -1,16 +1,45 @@
 
 .tBar {
-  overflow: hidden;
-  background-color: #333333;
+    overflow: hidden;
+    background-color: #333333;
 }
 
-.tBar p.toptitle {
-  float: left;
-  display: inline-block;
-  padding-left: 16px;
-  font-size: 20px;
-  font-family: sans-serif;
-  color: white
+.tlinks {
+    float: left;
+    padding: 20px;
+}
+
+.useraction {
+    float: right;
+    margin: 16px;
+}
+
+.useraction a.newuserlink {
+    margin: 18px;
+    font-family: sans-serif;
+    color: #e3e3e3;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.useraction a.newuserlink:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.tBar a.tlink {
+    margin: 24px;
+    font-family: sans-serif;
+    color: #e3e3e3;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tBar a.tlink:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .tBar img.logoimage {

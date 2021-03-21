@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="topbar.css">
   <link rel="stylesheet" href="bottombar.css">
   <script type="text/javascript" src="script/submitsearch.js"></script>
+  <script type="text/javascript" src="script/useraction.js"></script>
   <title>Salty Fish | <null></title>
 </head>
 <body>
@@ -18,6 +19,17 @@
     <input type="text" id="searchquery" placeholder="Search Salty Fish..." name="search">
     <input type="button" class="submit" value="Salt!" onclick="getDataToNewPageSearch()">
   </div>
+  <div class="tlinks">
+    <a class="tlink" id="useronly" href="/my">Dashboard</a>
+    <a class="tlink" href="/shop">Shop</a>
+    <a class="tlink" href="/info">About</a>
+    <a class="tlink" href="/gameplay">Gameplay</a>
+    <a class="tlink" href="/join">Join Us!</a>
+  </div>
+  <div class="useraction">
+    <a class="newuserlink" href="/signup">New User?</a>
+    <input type="button" class="submit" value="Log In" onclick="newuserlink()">
+  </div>
 </div>
 <div class="mText">
   <p class="title">This is your title</p>
@@ -26,11 +38,11 @@
 </div>
 <div class="bBar">
   <div class="links">
-    <a class="link" href="#support">Support Center</a>
-    <a class="link" href="#feedbacks">Send Feedbacks</a>
+    <a class="link" href="/support">Support Center</a>
+    <a class="link" href="/support/feedbacks">Send Feedbacks</a>
     <a href="/"><img class="logoimage" src="logo.png"></a>
-    <a class="link" href="#termsofuse">Terms of Use</a>
-    <a class="link" href="#privacy">Privacy Policy</a>
+    <a class="link" href="/support/terms-of-use">Terms of Use</a>
+    <a class="link" href="/support/privacy">Privacy Policy</a>
   </div>
   <p>&#169; 2021 Salty Fish LLC. All rights reserved</p>
 </div>

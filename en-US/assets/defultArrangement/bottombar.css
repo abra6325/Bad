@@ -18,21 +18,12 @@
     text-align: center;
     font-size: 12px;
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 36px;
     cursor: pointer;
 }
 
 .bBar a.link:hover {
     color: #ffffff;
-    font-size: 12px;
-    text-decoration: underline;
-}
-
-.bBar a.link:visited {
-    color: #defeff;
     font-size: 12px;
     text-decoration: underline;
 }
