@@ -10,7 +10,7 @@
 
 
 
-.idle {
+.cookiemsg .idle {
     visibility: hidden;
     bottom: 0;
     right: 0;
@@ -23,7 +23,7 @@
     background: #e3e3e3
 }
 
-.load {
+.cookiemsg .load {
   /*visibility: visible;
   bottom: 0;
   right: 0;
@@ -36,12 +36,12 @@
   animation: fadeIn 5s;
 }
 
-.load p {
+.cookiemsg .load p {
     font-size: 12px;
     font-family: sans-serif;
 }
 
-.load input[type=button] {
+.cookiemsg .load input[type=button] {
     cursor: pointer;
     border: double;
     border-width: 1px;
@@ -54,10 +54,10 @@
     border-radius: 8px;
 }
 
-.load input[type=button]:hover {
+.cookiemsg .load input[type=button]:hover {
     background: #bdbdbd;
 }
 
-.load input[type=button]:active {
+.cookiemsg .load input[type=button]:active {
     background: #858585;
 }

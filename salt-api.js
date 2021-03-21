@@ -21,8 +21,8 @@ function cget(cname){
 }
 function onLoad(){
     var firstvisit = cget("firstvisit")
-    if (firstvisit == "" || firstvisit= null || firstvisit == 0){
-        alert("newuser")
+    if (firstvisit == "" || firstvisit == null || firstvisit == 0){
+        cmessage()
         cset("firstuser",1,999999)
     }
 }
@@ -30,10 +30,10 @@ function cmessage(){
     var popup = document.getElementById("cookiemsg");
     popup.classList.toggle("load");
 }
-cmessage()
 function cagree(){
     var popup = document.getElementById("cookiemsg");
     popup.classList.toggle("load","idle");
     cset("cookieagree",true,999999)
 }
+onLoad()
 //from https://www.w3schools.com/js/js_cookies.asp thanks a lot
