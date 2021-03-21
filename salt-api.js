@@ -21,7 +21,7 @@ function cget(cname) {
 }
 function onLoad() {
     var firstvisit = cget("firstvisit")
-    if (firstvisit == 0){
+    if (firstvisit == "" || firstvisit= null || firstvisit == 0){
         alert("newuser")
         cset("firstuser",1,999999)
     }
