@@ -4,12 +4,6 @@
   to {opacity:1;}
 }
 
-
-
-
-
-
-
 .cookiemsg .idle {
     visibility: hidden;
     bottom: 0;
@@ -32,8 +26,8 @@
   padding: 16px;
   border: solid;
   border-radius: 8px;
-  background: #ffffff;
-  animation: fadeIn 5s;
+  background: #e3e3e3;
+  animation: messageIn 2s;
 }
 
 .cookiemsg .load p {
