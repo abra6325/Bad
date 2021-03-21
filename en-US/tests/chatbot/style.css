@@ -36,4 +36,24 @@ body {
     border-color: #000000;
     background-color: #d6d6d6;
     border-radius: 12px;
+    padding: 16px;
+    width: 50%;
+}
+
+.nav p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.nav input.textchatbox {
+    background-color: #e3e3e3;
+    border-width: 2px;
+    border-radius: 6px;
+    padding-left: 12px;
+    width: 50%;
+    outline: none;
+}
+
+.title {
+    padding:16px;
 }
