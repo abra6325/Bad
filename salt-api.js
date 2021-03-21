@@ -4,7 +4,7 @@ function cset(name,value,expiredays){
     var expires = "expires="+date.toUTCString();
     document.cookie=name+"="+value+";"+expiredays+";path=/";
 }
-function cget(cname) {
+function cget(cname){
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -19,11 +19,21 @@ function cget(cname) {
     }
     return "";
 }
-function onLoad() {
+function onLoad(){
     var firstvisit = cget("firstvisit")
     if (firstvisit == "" || firstvisit= null || firstvisit == 0){
         alert("newuser")
         cset("firstuser",1,999999)
     }
+}
+function cmessage(){
+    var popup = document.getElementById("cookiemsg");
+    popup.classList.toggle("load");
+}
+cmessage()
+function cagree(){
+    var popup = document.getElementById("cookiemsg");
+    popup.classList.toggle("load","idle");
+    cset("cookieagree",true,999999)
 }
 //from https://www.w3schools.com/js/js_cookies.asp thanks a lot
