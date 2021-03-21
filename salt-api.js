@@ -28,7 +28,7 @@ function onLoad(){
 }
 function cmessage(){
     var popup = document.getElementById("cookiemsg");
-    popup.classList.toggle("load");
+    popup.classList.replace("idle","load");
 }
 function cagree(){
     var popup = document.getElementById("cookiemsg");
