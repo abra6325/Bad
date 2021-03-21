@@ -1,4 +1,4 @@
-function cset(name,value,expiredays,firstvisit){
+function cset(name,value,expiredays){
     var date = new Date();
     date.setTime(date.getTime()+(expiredays*24*60*60*1000));
     var expires = "expires="+date.toUTCString();
@@ -23,6 +23,7 @@ function onLoad() {
     var firstvisit = cget("firstvisit")
     if (firstvisit == 0){
         alert("newuser")
+        cset("firstuser",1,999999)
     }
 }
 //from https://www.w3schools.com/js/js_cookies.asp thanks a lot
