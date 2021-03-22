@@ -1,0 +1,92 @@
+
+.tBar {
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.tlinks {
+    float: left;
+    padding: 20px;
+}
+
+.useraction {
+    float: right;
+    margin: 16px;
+}
+
+.useraction a.newuserlink {
+    margin: 18px;
+    font-family: sans-serif;
+    color: #e3e3e3;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.useraction a.newuserlink:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.tBar a.tlink {
+    margin: 24px;
+    font-family: sans-serif;
+    color: #e3e3e3;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tBar a.tlink:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.tBar img.logoimage {
+    float: left;
+    display: inline-block;
+    padding-left: 16px;
+    padding-top: 16px;
+    height: 32px;
+    width: 32px;
+}
+
+/* search bar*/
+.tBar .searchBox {
+    float: left;
+    position: relative;
+}
+
+.tBar input[type=text]{
+    border: double;
+    border-width: 1px;
+    border-color: #707070;
+    color: #ffffff;
+    background: #4d4d4d;
+    padding: 8px;
+    margin: 16px;
+    font-size: 8px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.tBar input[type=button] {
+    cursor: pointer;
+    border: double;
+    border-width: 1px;
+    border-color: #707070;
+    color: #e3e3e3;
+    background: #4d4d4d;
+    padding: 8px;
+    font-size: 8px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.tBar input[type=button]:hover {
+    background: #454545;
+}
+
+.tBar input[type=button]:active {
+    background: #333333;
+}

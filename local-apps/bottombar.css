@@ -1,0 +1,42 @@
+
+.bBar {
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: #333333;
+}
+
+.links {
+    text-align: center;
+}
+
+.bBar a.link {
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 36px;
+    cursor: pointer;
+}
+
+.bBar a.link:hover {
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.bBar p {
+  color: #d9d9d9;
+  font-size: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.bBar img.logoimage {
+    height: 32px;
+    width: 32px;
+}
