@@ -1,3 +1,15 @@
+/*
+Copyright (c) 2021 Salty LLC. All rights reserved.
+Any unauthorized used are prohibited.
+*/
+//Function Set / Variable
+
+var cookie-agree-button = new document.getElementById("cookiebutton")
+var search-button = new document.getElementById("searchbutton")
+
+
+
+
 function cset(name,value,expiredays){
     var date = new Date();
     date.setTime(date.getTime()+(expiredays*24*60*60*1000));
@@ -25,6 +37,10 @@ function onLoad(){
         cmessage()
         cset("firstuser",1,999999)
     }
+}
+function page(){
+    var titleElement = document.getElementsByTagName("title")[0]
+    titleElement.innerHTML = pageData["pagetype"] + " | " + pageData["title"] + " | Salty Fish"
 }
 function cmessage(){
     var popup = document.getElementById("cookiemsg");
