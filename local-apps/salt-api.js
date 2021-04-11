@@ -4,12 +4,20 @@ Any unauthorized used are prohibited.
 */
 //Function Set / Variable
 
-var cookie-agree-button = new document.getElementById("cookiebutton")
-var search-button = new document.getElementById("searchbutton")
-
-
-
-
+var cookieAgreeButton = document.getElementById("cookiebutton")
+cookieAgreeButton.onclick = function(){
+    cagree()
+}
+var searchButton = document.getElementById("searchbutton")
+searchButton.onclick = function(){
+    var searchquery = document.getElementById("searchquery").value;
+    var searchURL = "/search?query=" + searchquery
+    window.location.href = searchURL
+}
+var loginButton = document.getElementById("loginb")
+loginButton.onclick = function(){
+    window.location.href = "/login"
+}
 function cset(name,value,expiredays){
     var date = new Date();
     date.setTime(date.getTime()+(expiredays*24*60*60*1000));
@@ -51,4 +59,4 @@ function cagree(){
     popup.classList.replace("load","idle");
     cset("cookieagree",true,999999)
 }
-//from https://www.w3schools.com/js/js_cookies.asp thanks a lot
+//some from https://www.w3schools.com/js/js_cookies.asp thanks a lot
