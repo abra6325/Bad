@@ -5,16 +5,16 @@ Any unauthorized used are prohibited.
 //Function Set / Variable
 
 var cookieAgreeButton = document.getElementById("cookiebutton")
+var searchButton = document.getElementById("searchbutton")
+var loginButton = document.getElementById("loginb")
 cookieAgreeButton.onclick = function(){
     cagree()
 }
-var searchButton = document.getElementById("searchbutton")
 searchButton.onclick = function(){
     var searchquery = document.getElementById("searchquery").value;
     var searchURL = "/search?query=" + searchquery
     window.location.href = searchURL
 }
-var loginButton = document.getElementById("loginb")
 loginButton.onclick = function(){
     window.location.href = "/login"
 }
