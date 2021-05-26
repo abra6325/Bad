@@ -1,0 +1,85 @@
+.shop .shoptag {
+    border-style: solid;
+    border-width: 2px;
+    margin: 16px;
+    width: 30%;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    cursor: pointer
+    float: right;
+}
+
+.shop img {
+    height: 150px;
+    width: 250px;
+    border: solid;
+    border-color: #000000;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.shop .shoptag:hover {
+    box-shadow: 0 0px 8px 0 rgba(0,0,0,10);
+    cursor: pointer
+}
+
+.shop .header {
+    font-size: 18px;
+    margin: 8px;
+}
+
+.shop .pheader {
+    font-size: 18px;
+    margin: 8px;
+    color: #d9d9d9;
+}
+
+.shop .description {
+    font-size: 8px;
+    margin: 8px;
+}
+
+.shop .shopinner {
+    text-align: right;
+    margin: 16px;
+}
+
+.shop .buy0 {
+    background-color: #e3e3e3;
+    color: #000000;
+    padding: 8px;
+    margin: 8px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #000000;
+    cursor: pointer;
+}
+
+.shop .buy0:hover {
+    background-color: #bdbdbd;
+}
+
+.shop .buy0:active {
+    background-color: #979797;
+}
+
+.shop .buy1 {
+    background-color: #32b354;
+    color: #000000;
+    padding: 8px;
+    margin: 8px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #000000;
+    cursor: pointer;
+}
+
+.shop .buy1:hover {
+    background-color: #328b54;
+}
+
+.shop .buy1:active {
+    background-color: #227a48;
+}
