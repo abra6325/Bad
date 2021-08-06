@@ -1,21 +1,14 @@
 .mText {
+    background-color: #e3e3e3
     padding-left: 24px;
 }
 
 .mText p.title {
     font-size: 32px;
     font-weight: bold;
-    margin: 16px;
 }
 
 .mText p.text {
     font-size: 16px;
     font-weight: normal;
-    margin: 8px;
-}
-
-.mText p.subtitle {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 16px;
 }

@@ -3,6 +3,11 @@ Copyright (c) 2021 Salty LLC. All rights reserved.
 Any unauthorized used are prohibited.
 */
 //Function Set / Variable
+console.log("%c %c %c %cSalty Fish API.main %c %c %c","background-color:#ebebeb","background-color:#bfbfbf","background-color:#969696","background-color:#969696;color:#ebebeb","background-color:#bfbfbf","background-color:#ebebeb","background-color:#ebebeb")
+
+var cb = document.getElementById("cookiebutton")
+var sb = document.getElementById("searchbutton")
+var lb = document.getElementById("loginb")
 
 function cset(name,value,expiredays){
     var date = new Date();
@@ -45,21 +50,4 @@ function cagree(){
     popup.classList.replace("load","idle");
     cset("cookieagree",true,999999)
 }
-function response(type){
-    if (type == "nsfw"){
-
-    }
-}
-
-document.querySelector("#cookiebutton").onclick = function(){cagree();}
-document.querySelector("#searchbutton").onclick = function(){var searchquery = document.getElementById("searchquery").value;
-if (searchquery == "fuck"){response("nsfw")};var searchURL = "search?query=" + searchquery;window.location.href = searchURL};
-document.querySelector("#loginb").onclick = function(){window.location.href = "login";};
-function newuserlink(){
-    window.location.href = "/login"
-}
-var cookieagree = cget("cookieagree");if (cookieagree != "true"){onLoad();}
-
-console.log("%c %c %c %cSalty Fish API.main %c %c %c","background-color:#ebebeb","background-color:#bfbfbf","background-color:#969696","background-color:#969696;color:#ebebeb","background-color:#bfbfbf","background-color:#ebebeb","background-color:#ebebeb")
-
 //some from https://www.w3schools.com/js/js_cookies.asp thanks a lot

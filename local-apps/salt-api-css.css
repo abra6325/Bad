@@ -67,7 +67,7 @@
 }
 
 .cookiemsg .load input[type=button]:active {
-    background: #979797;
+    background: #858585;
 }
 
 .default input[type=button] {
@@ -78,8 +78,6 @@
     color: #000000;
     background: #e3e3e3;
     padding: 8px;
-    margin-left: 8px;
-    margin-bottom: 16px;
     font-size: 8px;
     outline: none;
     border-radius: 8px;
@@ -91,35 +89,4 @@
 
 .default input[type=button]:active {
     background: #858585;
-}
-
-.default input[type=text] {
-    -webkit-text-security: disc;
-    -moz-text-security: disc;
-    text-security: disc;
-    border: double;
-    border-width: 1px;
-    border-color: #707070;
-    color: #000000;
-    background: #e3e3e3;
-    padding: 8px;
-    margin-left: 8px;
-    margin-bottom: 16px;
-    font-size: 8px;
-    outline: none;
-    border-radius: 8px;
-}
-
-.default input[type=checkbox] {
-    border: double;
-    border-width: 1px;
-    border-color: #707070;
-    color: #000000;
-    background: #e3e3e3;
-    padding: 8px;
-    margin-left: 8px;
-    margin-bottom: 16px;
-    font-size: 8px;
-    outline: none;
-    border-radius: 8px;
 }
