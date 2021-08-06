@@ -5,6 +5,7 @@ Any unauthorized used are prohibited.
 //Function Set / Variable
 console.log("%c %c %c %cSalty Fish API.main %c %c %c","background-color:#ebebeb","background-color:#bfbfbf","background-color:#969696","background-color:#969696;color:#ebebeb","background-color:#bfbfbf","background-color:#ebebeb","background-color:#ebebeb")
 
+var sq = document.getElementById("searchquery")
 var cb = document.getElementById("cookiebutton")
 var sb = document.getElementById("searchbutton")
 var lb = document.getElementById("loginb")
@@ -49,5 +50,13 @@ function cagree(){
     var popup = document.getElementById("cookiemsg");
     popup.classList.replace("load","idle");
     cset("cookieagree",true,999999)
+}
+
+cb.onclick() = cagree();
+sb.onclick() = function(){
+    document.location.href = "/search?query=" + sq.value
+}
+lb.onclick() = function(){
+    document.location.href = "/login"
 }
 //some from https://www.w3schools.com/js/js_cookies.asp thanks a lot
