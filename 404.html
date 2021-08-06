@@ -11,10 +11,6 @@
   <link rel="stylesheet" href="/local-apps/topbar.css">
   <link rel="stylesheet" href="/local-apps/bottombar.css">
   <link rel="stylesheet" href="/404.css">
-  <script type="text/javascript" src="/local-apps/scripts/submitsearch.js"></script>
-  <script type="text/javascript" src="/local-apps/scripts/useraction.js"></script>
-  <script type="text/javascript" alt="all-static" src="/local-apps/salt-api.js"></script>
-  <script>var pageData = {"pagetype":"Error","title":"404"}</script>
   <title>Salty Fish | <null></title>
 </head>
 <body>
@@ -62,8 +58,22 @@
   </div>
   <p>&#169; 2021 Salty Fish LLC. All rights reserved</p>
 </div>
+<script type="text/javascript" src="/local-apps/scripts/submitsearch.js"></script>
+<script type="text/javascript" src="/local-apps/scripts/useraction.js"></script>
+<script type="text/javascript" alt="all-static" src="/local-apps/salt-api.js"></script>
+<script>var pageData = {"pagetype":"Error","title":"404"}</script>
 <script type="text/javascript" src="/404.js"></script>
 <script>var cookieagree = cget("cookieagree");if (cookieagree != "true"){onLoad();}</script>
+<script>var sq = document.getElementById("searchquery");
+var cb = document.getElementById("cookiebutton");
+var sb = document.getElementById("searchbutton");
+var lb = document.getElementById("loginb");cb.onclick() = cagree();
+sb.onclick() = function(){
+    document.location.href = "/search?query=" + sq.value
+};
+lb.onclick() = function(){
+    document.location.href = "/login"
+};</script>
 <!-- QUotes from https://www.forbes.com/sites/ekaterinawalter/2013/12/30/30-powerful-quotes-on-failure/?sh=d4b4da624bd1 -->
 </body>
 </html>
