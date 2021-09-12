@@ -5,15 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-     <script>
-        function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-        }
-    </script>
-    <button class="g-recaptcha" 
-        data-sitekey="6Lf3uF4cAAAAAJlndVu_umiLJo1VNpAG_5R72Vdr" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
+     
 </head>
 <body>
     <h1>Title</h1>
@@ -22,8 +14,16 @@
     <img src="pause.png" id="pause">
     <div align="center" id="grecaptcha_Area">
         <form action="?" method="POST">
-            <div class="g-recaptcha" data-sitekey="6Lf3uF4cAAAAAJlndVu_umiLJo1VNpAG_5R72Vdr"></div>
-            <input type="submit" value="Submit">
+            <script>
+                function onSubmit(token) {
+                document.getElementById("demo-form").submit();
+                }
+            </script>
+            <button class="g-recaptcha" 
+                data-sitekey="6Lf3uF4cAAAAAJlndVu_umiLJo1VNpAG_5R72Vdr" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>
+            
         </form>
 
     </div>
