@@ -7,40 +7,86 @@
     
      
 </head>
+
+<html lang="en-us">
+<!--SF App 1.0-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="https://www.saltyfishstudios.net/assets/des_logo.png">
+  <meta property="og:title" content="Salty Fish Studios">
+  <meta property="og:description" content="Join Salty Fish for stuff!">
+  <link rel="stylesheet" alt="all-static" href="/local-apps/salt-api-css.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/local-apps/main.css">
+  <link rel="stylesheet" href="/local-apps/bodytext.css">
+  <link rel="stylesheet" href="/local-apps/topbar.css">
+  <link rel="stylesheet" href="/local-apps/bottombar.css">
+  <link rel="stylesheet" href="/404.css">
+  <title>Salty Fish | 404</title>
+</head>
 <body>
-    <h1>Title</h1>
-    <img src="play.png" id="play">
-    <br><br/>
-    <img src="pause.png" id="pause">
-    <div align="center" id="grecaptcha_Area">
-        <form action="?" method="POST">
-            <script src="https://www.google.com/recaptcha/api.js?render=6Lf3uF4cAAAAAP-4108EQtFJbNoWvP4yAF2POhlv"></script>
-            <script>
-                function onClick(e) {
-                    e.preventDefault();
-                    grecaptcha.ready(function() {
-                    grecaptcha.execute('6Lf3uF4cAAAAAP-4108EQtFJbNoWvP4yAF2POhlv', {action: 'submit'}).then(function(token) {
-                        // Add your logic to submit to your backend server here.
-                    });
-                  });
-                }
-            </script>
-        </form>
-
-    </div>
-    <script>
-        var text = "Click to load"
-        var play = document.getElementById("play")
-        var pause = document.getElementById("pause")
-        var audio = new Audio("audio.wav")
-        play.onclick = function(e){
-            audio.play()
-        }
-        pause.onclick = function(e){
-            audio.pause()
-        }
-
-    </script>
-
+<div class="cookiemsg">
+  <div class="idle" id="cookiemsg">
+    <img src="assets/favicon.ico" height="7" width="5">
+    <p>We use cookies for the best experience of all!</p>
+    <p>please accept the cookies privacy in order to continue!</p>
+    <p>For more please view the <a href="/support">support center</a></p>
+    <input id="cookiebutton" type="button" class="submit" value="I agree">
+  </div>
+</div>
+<div class="tBar">
+  <a href="/"><img class="logoimage" src="/assets/logo.svg"></a>
+  <div class="searchBox">
+    <input type="text" id="searchquery" placeholder="Search Salty Fish..." name="search">
+    <input type="button" id="searchbutton" class="submit" value="Salt!">
+  </div>
+  <div class="tlinks">
+    <a class="tlink" id="useronly" href="/my">Dashboard</a>
+    <a class="tlink" href="/shop">Shop</a>
+    <a class="tlink" href="/info">About</a>
+    <a class="tlink" href="/gameplay">Gameplay</a>
+    <a class="tlink" href="/join">Join Us!</a>
+  </div>
+  <div class="useraction">
+    <a class="newuserlink" href="/signup">New User?</a>
+    <input type="button" id="loginb" class="submit" value="Log In">
+  </div>
+</div>
+<div class="mText">
+  <p class="error-giant">404</p>
+  <p class="error-text">Error 404, not found</p>
+  <p id="quote1" class="quote"></p>
+  <p id="quote2" class="quote"></p>
+  <p id="quote3" class="quote-sign"></p>
+</div>
+<div class="bBar">
+  <div class="links">
+    <a class="link" href="/support">Support Center</a>
+    <a class="link" href="/support/feedbacks">Send Feedbacks</a>
+    <a href="/"><img class="logoimage" src="/assets/logo.svg" height="19" width="27"></a>
+    <a class="link" href="/support/terms-of-use">Terms of Use</a>
+    <a class="link" href="/support/privacy">Privacy Policy</a>
+  </div>
+  <p>&#169; 2021 Salty Fish LLC. All rights reserved</p>
+</div>
+<script type="text/javascript" src="/local-apps/scripts/submitsearch.js"></script>
+<script type="text/javascript" src="/local-apps/scripts/useraction.js"></script>
+<script type="text/javascript" alt="all-static" src="/local-apps/salt-api.js"></script>
+<script>var pageData = {"pagetype":"Error","title":"404"}</script>
+<script type="text/javascript" src="/404.js"></script>
+<script>var cookieagree = cget("cookieagree");if (cookieagree != "true"){onLoad();}</script>
+<script>var sq = document.getElementById("searchquery");
+var cb = document.getElementById("cookiebutton");
+var sb = document.getElementById("searchbutton");
+var lb = document.getElementById("loginb");cb.onclick = cagree();
+sb.onclick = function(){
+    document.location.href = "/search?query=" + sq.value
+};
+lb.onclick = function(){
+    document.location.href = "/login"
+};initl()</script>
+<!-- QUotes from https://www.forbes.com/sites/ekaterinawalter/2013/12/30/30-powerful-quotes-on-failure/?sh=d4b4da624bd1 -->
 </body>
+
 </html>
