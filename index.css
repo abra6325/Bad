@@ -1,4 +1,4 @@
-#HeadTitle {
+.HeadTitle {
   background-color: lightblue;
   color : black;
   text-align: center;
@@ -7,7 +7,7 @@
   
   
 }
-#Devs{
+.Devs{
   background-color: lightblue;
   color : red;
   text-align: center;
