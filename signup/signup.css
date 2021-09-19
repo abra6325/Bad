@@ -9,14 +9,18 @@ body {
     top: 50%;
     left: 50%;
     border: solid;
-    border-raidius: 8px;
-    border-width: 8px;
+    border-radius: 8px;
+    border-width: 2px;
 }
 .mainGUI p .title {
+    padding: 8px;
+    margin: 16px;
     font-family: sans-serif;
     font-size: 24px;
 }
 .mainGUI p {
+    padding: 8px;
+    margin: 16px;
     font-family: sans-serif;
     font-size: 12px;
 }
@@ -27,7 +31,7 @@ body {
 .mainGUI input[type=text] {
     border: solid;
     border-width: 1px;
-    border-color: #707070;
+    border-color: #e3e3e3;
     color: #ffffff;
     background: #4d4d4d;
     padding: 8px;
