@@ -12,19 +12,19 @@ body {
     border-raidius: 8px;
     border-width: 8px;
 }
-.maingui p .title {
+.mainGUI p .title {
     font-family: sans-serif;
     font-size: 24px;
 }
-.maingui p {
+.mainGUI p {
     font-family: sans-serif;
     font-size: 12px;
 }
-.maingui p .title {
+.mainGUI p .title {
     font-family: sans-serif;
     font-size: 24px;
 }
-.maingui input[type=text] {
+.mainGUI input[type=text] {
     border: solid;
     border-width: 1px;
     border-color: #707070;
