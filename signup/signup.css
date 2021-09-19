@@ -3,3 +3,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mainGUI {
+    position: absolute;
+    background: #e3e3e3;
+    top: 50%;
+    left: 50%;
+}
