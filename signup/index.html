@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<!--SF App 1.0-->
-<head>
+<html lang="en-us" class="js-focus-visible" data-js-focus-visible=""><!--SF App 1.0--><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="https://www.saltyfishstudios.net/assets/des_logo.png">
@@ -17,7 +15,6 @@
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
     <script src="login.js"></script>
-</head>
 <body>
 <div class="tBar">
     <a href="/"><img class="logoimage" src="/assets/logo.svg"></a>
@@ -39,10 +36,11 @@
 </div>
 <div class="mainGUI">
     <p class="title">Make a Saltyfish account!</p>
-    <p>Customize your username and password.</p>
-    <input type="text" id="mainGUI.username" placeholder="Enter username" name="usernamebox">
-    <input type="text" id="mainGUI.password" placeholder="Enter password" name="passwordbox">
-    <input type="text" id="mainGUI.confirm" placeholder="Confirm password" name="comfbox">
+    <p class="text">Customize your username and password.</p>
+    <input type="text" id="mainGUI.username" placeholder="Enter username" name="usernamebox"><br><br>
+    <input type="text" id="mainGUI.password" placeholder="Enter password" name="passwordbox"><br><br>
+    <input type="text" id="mainGUI.confirm" placeholder="Confirm password" name="comfbox" class="">
+    <input type="button" id="mainGUI.submit" name="submit" value="Submit"><br><br><br><br>
 </div>
 <div class="bBar">
     <div class="links">
@@ -52,7 +50,7 @@
         <a class="link" href="/support/terms-of-use">Terms of Use</a>
         <a class="link" href="/support/privacy">Privacy Policy</a>
     </div>
-    <p>&#169; 2021 Salty Fish LLC. All rights reserved</p>
+    <p>© 2021 Salty Fish LLC. All rights reserved</p>
 </div>
 <div class="cookiemsg">
     <div class="idle" id="cookiemsg">
@@ -78,6 +76,4 @@ sb.onclick = function(){
 lb.onclick = function(){
     document.location.href = "/login"
 };initl()</script>
-<!-- QUotes from https://www.forbes.com/sites/ekaterinawalter/2013/12/30/30-powerful-quotes-on-failure/?sh=d4b4da624bd1 -->
-</body>
-</html>
+<loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container><loom-container id="lo-companion-container"><loom-shadow classname="resolved"></loom-shadow></loom-container></body></html>
