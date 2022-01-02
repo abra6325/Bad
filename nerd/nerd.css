@@ -37,7 +37,9 @@
 }
 .header button.invite{
   font-family: "Courier New";
+  font-weight: bold;
   border-radius: 8px;
+  transform: translate(0px, 230%);
   background-color: #fef200;
   padding: 16px;
   text-decoration: none;
