@@ -16,6 +16,14 @@
   color: white;
   font-size: 30px;
 }
+.header p.hcap{
+  font-family: "Courier New";
+  transform: translate(0px, 600%);
+  padding-left: 35%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
 .header p.htitle{
   font-family: "Courier New";
   -webkit-text-stroke: 2px #878100;
