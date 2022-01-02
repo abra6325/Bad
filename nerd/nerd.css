@@ -36,7 +36,7 @@
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  margin: 4px;
+  margin-left: 35%;
   transition-duration: 0.4s;
   cursor: pointer;
 }
