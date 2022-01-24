@@ -1,12 +1,16 @@
+body {
+  background-color: #22b14c
+}
 .header{
   padding: 60px;
   text-align: center;
   height: 700px;
-  background-image: url("nerd-banner.png");
+  background-image: url("nerd-banner.png"); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   font-size: 30px;
+  margin: 0px;
 }
 .header p.htext{
   font-family: "Courier New";
@@ -77,4 +81,61 @@
     font-size: 16px;
     font-weight: normal;
     font-family: "Courier New";
+}
+
+.nerd-links {
+    margin: 100px;
+    border: solid;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    background-color: #e3e3e3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nerd-links p.title {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Courier New";
+    font-size: 24px;
+    color: #000000;
+}
+.nerd-links p.text {
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Courier New";
+}
+.nerd-links a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fef200;
+    border: solid;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+.nerd-links a.button:hover {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: #e3d800;
+}
+.nerd-links a.button:active {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    background-color: #938c00;
 }
