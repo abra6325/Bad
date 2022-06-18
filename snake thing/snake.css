@@ -1,0 +1,40 @@
+#Canvas{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    border:10px solid lightblue;
+}
+Body{
+    background-image: url("imgs/snake.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#TitleText{
+    text-align: center;
+    color:chocolate;
+
+}
+#randomtext{
+    
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: left top;
+    -moz-transform: rotate(45deg);
+    -moz-transform-origin: left top;
+    -ms-transform: rotate(45deg);
+    -ms-transform-origin: left top;
+    -o-transform: rotate(45deg);
+    -o-transform-origin: left top;
+    transform: rotate(45deg);
+    transform-origin: left top;
+
+    position: absolute;
+    top: 0;
+    left: 80%;
+    white-space: nowrap;    
+    font-size: 48px;
+    color:blue;
+}
