@@ -2,7 +2,7 @@
 .bBar {
   overflow: hidden;
   left: 0;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding-top: 16px;
