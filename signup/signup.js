@@ -1,19 +1,36 @@
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAFCOkUHV1ZRv5ORiU3sn5XmGsOtjEfUx8",
-    authDomain: "accountdata-ae6f3.firebaseapp.com",
-    projectId: "accountdata-ae6f3",
-    storageBucket: "accountdata-ae6f3.appspot.com",
-    messagingSenderId: "440835452205",
-    appId: "1:440835452205:web:902d990fcaef34d27977a4"
-  };
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBrpd_RYjAWrAqLWtqFwlNOiuXS_mMECJY",
+  authDomain: "salty-fish-studios.firebaseapp.com",
+  databaseURL: "https://salty-fish-studios-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "salty-fish-studios",
+  storageBucket: "salty-fish-studios.appspot.com",
+  messagingSenderId: "184068440205",
+  appId: "1:184068440205:web:141dce9e98de5c6e2fe2c4",
+  measurementId: "G-CKJE33ZB5H"
+};
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-
-  const auth = firebase.auth()
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth();
+createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log("SIGNED IN");
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage);
+    // ..
+  });
