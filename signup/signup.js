@@ -22,6 +22,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth();
+var email = document.getElementById("mainGUI.username").value;
+var pass1 = document.getElementById("mainGUI.password").value;
+var pass2 = document.getElementById("mainGUI.confirm").value;
+function checkProvided(pass1,pass2){
+  if(pass1==pass2){
+    
 createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
