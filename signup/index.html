@@ -15,6 +15,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
     <script src="login.js"></script>
+    <script src="signup.js></script>
 <body>
 <div class="tBar">
     <a href="/"><img class="logoimage" src="/assets/logo.png"></a>
@@ -37,10 +38,10 @@
 <div class="mainGUI">
     <p class="title">Make a Saltyfish account!</p>
     <p class="text">Customize your username and password.</p>
-    <input type="text" id="mainGUI.username" placeholder="Enter username" name="usernamebox"><br><br>
+    <input type="text" id="mainGUI.username" placeholder="Enter email" name="usernamebox"><br><br>
     <input type="password" id="mainGUI.password" placeholder="Enter password" name="passwordbox"><br><br>
     <input type="password" id="mainGUI.confirm" placeholder="Confirm password" name="comfbox" class="">
-    <input type="button" id="mainGUI.submit" name="submit" value="Submit"><br><br><br><br>
+    <input type="button" id="mainGUI.submit" name="submit" value="Submit" onclick="checkProvided"><br><br><br><br>
 </div>
 <div class="bBar">
     <div class="links">
